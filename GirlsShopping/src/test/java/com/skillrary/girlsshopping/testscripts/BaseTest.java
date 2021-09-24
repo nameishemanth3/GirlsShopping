@@ -36,10 +36,10 @@ public class BaseTest implements IAutoConstants {
 						@Optional(ETO) String explicit) {
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
-			WebDriverManager.chromedriver().setup();
+			System.setProperty(CHROME_KEY, CHROME_PATH);
 			driver = new ChromeDriver();
 		} else if(browserName.equalsIgnoreCase("firefox")) {
-			WebDriverManager.firefoxdriver().setup();
+			System.setProperty(GECKO_KEY, GECKO_PATH);
 			driver = new FirefoxDriver();
 		} else {
 			Assert.fail("Browser Is not Supported");

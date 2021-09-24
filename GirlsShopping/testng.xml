@@ -4,7 +4,7 @@
 <suite name="Suite" verbose="5" parallel="tests">
   
   <test thread-count="5" name="ChromeTest">
-  	<parameter name="browserName" value="chrome"></parameter>
+  	<parameter name="browserName" value="firefox"></parameter>
     <classes>
       <class name="com.skillrary.girlsshopping.testscripts.AddToKartTC001"/>
       <!-- <class name="testscripts.DeleteFromKartTC002"/> -->

@@ -20,6 +20,8 @@ import com.skillrary.girlsshopping.genericlibs.WebActionUtil;
 import com.skillrary.girlsshopping.pom.HomePage;
 import com.skillrary.girlsshopping.pom.LoginPage;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BaseTest implements IAutoConstants {
 	
 	WebDriver driver;
@@ -34,10 +36,10 @@ public class BaseTest implements IAutoConstants {
 						@Optional(ETO) String explicit) {
 		
 		if(browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty(CHROME_KEY, CHROME_PATH);
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 		} else if(browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty(GECKO_KEY, GECKO_PATH);
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		} else {
 			Assert.fail("Browser Is not Supported");

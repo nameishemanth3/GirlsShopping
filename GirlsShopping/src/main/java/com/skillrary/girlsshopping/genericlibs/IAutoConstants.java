@@ -3,7 +3,7 @@ package com.skillrary.girlsshopping.genericlibs;
 /**
  * 
  * This interface is used to store all the Fixed Configuration Data for the Project
- * It is like Property FIle
+ * It is like Property FIle......
  */
 public interface IAutoConstants {
 	String CHROME_KEY="webdriver.chrome.driver";

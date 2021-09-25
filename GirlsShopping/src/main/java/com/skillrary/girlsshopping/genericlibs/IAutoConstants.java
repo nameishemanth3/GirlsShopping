@@ -15,7 +15,7 @@ public interface IAutoConstants {
 	String MAIN_URL="http://automationpractice.com/";
 	String DEFAULT_USER="nameishemanth@gmail.com";
 	String DEFAULT_PASSWORD="Testing@123";
-	String DEFAULT_BROWSER="chrome";
+	String DEFAULT_BROWSER="firefox";
 	
 	String ITO="15";
 	String ETO="15";
